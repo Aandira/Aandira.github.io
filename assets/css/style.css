@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f8edcd;
+}
+
+.nav{
+    background-color: #46322b;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav  a{
+    color: white;
+    background-color: #46322b;
+}
+
+.nav a:hover{
+    color: #c89666;
+}
+
+.nav h2{
+    background-color: #46322b;
+}
+
+.data-list{
+    margin-left: 40%;
+    background-color: #46322b;
+}
+
+.data-list li{
+    display: inline-block;
+    margin-left: 20px;
+    background-color:#46322b;
+}
+
+.logo{
+        margin-left: 30px;
+        background-color: #46322b;
+}
+
+.list{
+    display: none;
+    background-color: black;
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.list li{
+    display: block;
+    margin: 10px;
+    color: white;
+}
+
+.wisata:hover .fa-caret-down{
+    transform: rotate(-90deg);
+}
+
+.fa-caret-down{
+    transform: rotate(0deg);
+    transition: 0.3s;
+    background-color: #46322b;
+}
+
+.data-list a{
+    text-decoration:none ;
+}
+
+.wisata:hover .list{
+    display: block;
+}
+
+.list li:hover{
+    color: #c89666;
+}
+
+/* header*/
+
+.header{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.des-header{
+    width: 45%;
+    margin: auto;
+}
+
+.des-header h1{
+     font-size: 6rem;
+    width: 50%;
+    font-weight: 800;
+
+}
+
+.gambar{
+    width: 40%;
+    height: 100vh;
+}
+
+.gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+/*bg-card==*/
+
+.bg-card{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card{
+    width: 250px;
+    height: 480px;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px grey;
+    transition: 300ms;
+}
+
+.card:hover img{
+    transform: scale(1.5);
+    transition: 2s;
+}
+.gambar-card{
+    width: 250px;
+    height: 200px;;
+    overflow: hidden;
+}
+
+.gambar-card img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.des-card{
+    padding: 5px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.des-card h2{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.des-card p{
+    color: black;
+    line-height: 25px;
+}
+
+.bg-card a{
+    text-decoration: none;
+}
+
+.form {
+    margin: 20px;
+
+}
+
+.submit:hover{
+    background-color: #dfd8c8;
+}
+
+
+/* TODO AWAL GALLERY */
+.gallery {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.gallery-box .box:nth-child(1) h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.gallery-box .box:nth-child(1) p {
+  line-height: 2;
+}
+
+.gallery-box .box:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.gallery-box .box:nth-child(2) img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.gallery-box .box:nth-child(2) img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-box .box:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .gallery-box .box:nth-child(2) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* TODO AKHIR GALLERY */
+
+/*footer==*/
+
+.bg-footer{
+    height: 10vh;
+    background-color: #323643;
+    text-align: center;
+    color: white;
+    padding-top: 15vh;
+}
+
+.bg-footer p{
+    background-color: #323643;
+}
+
+/* Stil untuk perangkat seluler (lebar maksimum 576px) */
+@media screen and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .des-header {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .gambar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gambar img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .data-list {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .data-list li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .list {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bg-card {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .des-card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .bg-footer {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+/* Stil untuk tablet (lebar maksimum 768px) */
+@media screen and (max-width: 768px) {
+    /* Sesuaikan gaya untuk tablet di sini */
+}
+
+/* Stil untuk laptop dan perangkat dengan lebar lebih besar */
+@media screen and (min-width: 992px) {
+    /* Sesuaikan gaya untuk laptop dan perangkat lebih besar di sini */
+}
